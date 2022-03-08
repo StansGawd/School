@@ -1,0 +1,7 @@
+//verilog for 1 bit half adder
+module one_bit_half_adder(A,B,sum,carry);
+    output sum,carry;
+    input A,B;
+    and G1(carry,A,B);
+    xor G2(sum,A,B);
+endmodule
